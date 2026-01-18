@@ -947,7 +947,7 @@
     });
     
     function loadChannels() {
-      fetch('https://raw.githubusercontent.com/renault-dev/jstrweb/refs/heads/main/jtv.php?token=GHSAT0AAAAAADTPF2RVJBO67C3SSQPPPG6Q2LMYGTA')
+      fetch('https://raw.githubusercontent.com/renault-dev/jstrweb/refs/heads/main/jtv.php')
         .then(res => res.json())
         .then(data => {
           allChannels = data.filter(channel => channel.mpd); // Filter out non-playable channels
@@ -1496,4 +1496,5 @@
 </body>
 
 </html>
+
 
