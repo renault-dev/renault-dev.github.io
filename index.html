@@ -947,7 +947,7 @@
     });
     
     function loadChannels() {
-      fetch('https://allinonereborn.xyz/jstrweb2/jstr.php')
+      fetch('https://raw.githubusercontent.com/renault-dev/jstrweb/refs/heads/main/jtv.php')
         .then(res => res.json())
         .then(data => {
           allChannels = data.filter(channel => channel.mpd); // Filter out non-playable channels
@@ -1494,4 +1494,5 @@
     }
   </script>
 </body>
+
 </html>
